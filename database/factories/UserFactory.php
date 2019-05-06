@@ -21,6 +21,6 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
         'age' => random_int(10,80),
         'gender' => random_int(0,1),
-        'phone' => $faker->unique()->phoneNumber
+        'phone' => $faker->unique()->e164PhoneNumber
     ];
 });
